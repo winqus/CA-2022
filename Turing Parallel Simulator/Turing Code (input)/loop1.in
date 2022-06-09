@@ -1,0 +1,40 @@
+00.0000*0001
+
+7
+
+
+0 0 0 R 0
+0 1 1 R 0
+0 * * L 1
+0 . . R loop
+1 0 1 R 0
+1 1 0 L 1
+1 . . R loop
+
+loop 0 0 R loop
+loop 1 1 R loop
+loop * * R loop2
+
+loop2 0 0 R loop2
+loop2 1 1 L loop3
+loop2 * * R loop2
+
+loop3 1 1 L loop3
+loop3 0 0 L loop3
+loop3 * * R loop2b
+
+loop2b 0 0 R loop2b
+loop2b 1 1 L loop3b
+loop2b * * R loop2b
+
+loop3b 1 1 L loop3b
+loop3b 0 0 L loop3b
+loop3b * * L loop2c
+
+loop2c 0 0 R loop2c
+loop2c 1 1 L loop3c
+loop2c * * R loop2c
+
+loop3c 1 1 L loop3c
+loop3c 0 0 L loop3c
+loop3c * * L 0
